@@ -1,0 +1,122 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    /* background-color: #f9f9f9; */
+    background-image: linear-gradient(to bottom, #8dc5c3, #a9e4a9, #f264c4);
+    color: #333;
+}
+
+header {
+    /* background-color: blue; */
+    background-image: linear-gradient(to bottom, #8dc5c3, #8ef804, #e20a0a);
+    padding: 20px;
+    text-align: center;
+    color: rgb(1, 17, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.lights{
+color: #e90808;
+font-size: large;
+font-weight: 200;
+}
+
+.camera{
+    color: rgb(160, 17, 243);
+    font-size: larger;
+}
+
+.action{
+    color: #ee040471;
+    font-size: x-large;
+}
+
+.messageIntro {
+    align-items: center;
+    justify-content:space-around;
+    /* color: #f264c4; */
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+.message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.mesage2 {
+    font-style: normal;
+    font-size: 1.3rem;
+
+}
+
+.gallery {
+    margin-top: 20px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    flex: 1 1 calc(33% - 20px); /* Adjusts number of images in a row */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .images img {
+        flex: 1 1 calc(50% - 20px); /* Two images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .images img {
+        flex: 1 1 100%; /* One image per row on very small screens */
+    }
+}
